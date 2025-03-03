@@ -1,0 +1,39 @@
+{
+  "name": "harmonichaven-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "harmonichaven-backend": "file:",
+    "innertune-backend": "file:",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.3",
+    "pg-hstore": "^2.3.4",
+    "postgres": "^3.4.5",
+    "react-toastify": "^11.0.5",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "sequelize-mock": "^0.10.2",
+    "supertest": "^7.0.0"
+  }
+}

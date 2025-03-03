@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+}
+
+/* Edit Profile Container */
+.edit-profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  padding: 40px 60px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #000, #111 40%, #000);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+
+.edit-profile-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: #d7145b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.message {
+  font-size: 1rem;
+  color: #d7145b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Back Button */
+.back-btnEditProfile {
+  /* position: absolute; */
+  top: 455px;
+  left: 300px;
+  background-color: #4b4b4b;
+
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.back-btnEditProfile:hover {
+  background-color: #444;
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px rgb(249, 246, 246));
+}
+
+/* Form Style */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #d7145b;
+}
+
+/* Submit Button */
+button {
+  background-color: #d7145b;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #b31245;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #990e38;
+}
+
+button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .edit-profile-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}

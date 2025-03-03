@@ -1,0 +1,205 @@
+/* Dark Theme Styles */
+.admin-dashboard-container {
+  background-color: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+
+.admin-dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-left: 5px;
+}
+
+/* Sidebar Navigation */
+.admin-dashboard-sidebar {
+  width: 250px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.admin-dashboard-sidebar a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.admin-dashboard-sidebar a:hover,
+.admin-dashboard-sidebar .active {
+  background: #333;
+}
+.admin-dashboard-sidebar a svg {
+  font-size: 20px;
+  color: #e0e0e0;
+}
+
+/* Main Content */
+.admin-dashboard-main {
+  margin-left: 270px;
+  padding: 20px;
+  width: calc(100% - 270px);
+}
+
+/* Header */
+.admin-dashboard-header {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+/* Form Section */
+.admin-dashboard-form-section {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.admin-dashboard-form-section h3 {
+  margin-bottom: 15px;
+}
+
+.admin-dashboard-form-section input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #2a2a2a;
+  border: none;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.admin-dashboard-form-section input::placeholder {
+  color: #b0b0b0;
+}
+
+.admin-dashboard-form-section button {
+  background: #d7145b;
+  color: #121212;
+  border: none;
+  /* padding: 10px 15px; */
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.admin-dashboard-form-section button:hover {
+  filter: drop-shadow(0 0 10px rgb(127, 75, 75)) ;
+  transform: scale(1.02) translateY(-2px);
+}
+
+/* Product & Studio Cards */
+.admin-dashboard-grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensures proper spacing */
+  gap: 20px; /* Space between items */
+}
+
+.admin-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.admin-dashboard-card {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-dashboard-card:hover {
+  transform: scale(1.07);
+}
+
+.admin-dashboard-card img {
+
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.admin-dashboard-card img:hover {
+  transform: scale(1.05);
+}
+
+.admin-dashboard-card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.admin-dashboard-card .price {
+  color: #d7145b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+.edit-btn {
+  background: #4caf50;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #45a049;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+.logoutBtn {
+  margin-top: 350px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #d7145b;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: ease-in-out 0.2s;
+}
+.logoutBtn svg {
+  font-size: 18px;
+}
+
+.logoutBtn:hover {
+  filter: drop-shadow(0 0 10px rgb(127, 75, 75));
+  transform: scale(1.02) translateY(-2px);
+}
